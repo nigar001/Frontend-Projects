@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="youtube.css">
+    <title>Youtube</title>
+    <style>
+    .first{
+        display: block;
+    width: 300px;
+}
+.video-picture{
+    display: grid;
+    grid-template-columns: 50px  1fr;
+}
+.search-bar{
+    padding-bottom: 5px;
+    padding-top: 5px;
+    margin-bottom: 5px;
+    font-size: 10px;
+    padding-right: 10px;
+    display: block;
+}
+.ghibli,
+.author{
+    display: block;
+    size:50px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.firstdiv{
+    width: 300px;
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.cat{
+    width: 40px;
+    border-radius: 20px;
+}
+.profile-div{
+    width:40px;
+    display: inline-block;
+    vertical-align: top;
+}
+.video-info{
+    width:200px;
+    display: inline-block;
+}
+</style>
+</head>
+<body>
+    <input class="search-bar" type="text" placeholder="Search">
+    <div class="firstdiv">
+        <div>
+            <img class="first" src="images/download.jpg" >
+        </div>
+        <div class="video-picture">
+            <div class="profile-div">
+                <img class="cat" src="images/Cat!⃝ ★─────────ೋღ 🌺 ღೋ─────────.jpeg">
+            </div>
+            <div class="video-info">
+                <p class="ghibli"><strong>Studio ghibli</strong>  is the best!</p>
+                <p class="author">Miyazaki</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="firstdiv">
+        <div>
+            <img class="first" src="images/download.jpeg" >
+        </div>
+        <div>
+            <p class="ghibli"><strong>Adventure</strong>  is the best!</p>
+            <p class="author">Unknown artist</p>
+        </div>
+    </div>
+</body>
+</html>

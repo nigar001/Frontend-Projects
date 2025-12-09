@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather_app</title>
+    <link  href="style.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+<body>
+    <div class="main">
+        <div class="search">
+            <input id="box" type="text" placeholder="Enter the city name ">
+            <button id="btn"><img src="search.png"></button>
+            
+        </div>
+        <div class="weather" id="weather">
+            <img  id= "icon" src="sunny.png" class="weather-icon">
+            <h1 id="Temp">20°C</h1>
+            <h2 id="city">Baku</h2>
+        <div class="details">
+            <div class="col">
+                <img  class="icons" src="humidity.png">
+                <div >
+                    <p id="Humidity">50%</p>
+                    <p> Humidity</p>
+                </div>
+            </div>
+            <div class="col">
+                <img class= "icons" src="windw.png">
+                <div >
+                    <p id="Wind">5 km/h</p>
+                    <p> Wind</p>
+                </div>
+            </div>
+        </div>
+            <div class="forecast">
+            <h2>Weather forecast</h2>
+            <div id="forecast_container"></div>
+            <canvas id="forecastchart"></canvas>
+        </div>
+        </div>
+        
+        <div id="error_screen" class="error_screen" display="none">
+            <h1>City not found</h1>
+            <p> please enter valid data</p>
+            <button onclick="go_Back()">🔙</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
